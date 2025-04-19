@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                               ),
                               SizedBox(height: 4),
                               Text(
-                                'John Doe',
+                                'Jack Smith',
                                 style: TextStyle(
                                   color: Colors.black87,
                                   fontSize: 24,
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                             onPressed: () {},
                             icon: Icon(
                               Icons.notifications_outlined,
-                              color: Colors.deepPurple,
+                              color: Color.fromARGB(255, 9, 2, 86),
                               size: 28,
                             ),
                           ),
@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             SliverAppBar(
-              backgroundColor: Colors.deepPurple,
+              backgroundColor: Color.fromARGB(255, 9, 2, 86),
               expandedHeight: 200,
               floating: true,
               flexibleSpace: FlexibleSpaceBar(
@@ -79,7 +79,7 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '\$5,270.00 ',
+                      '\$8,190.00 ',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 36,
@@ -89,7 +89,7 @@ class MyApp extends StatelessWidget {
                     Text('Current Balance', style: TextStyle(color: Colors.white70, fontSize: 16)),
                   ],
                 ),
-                title: Text('Wallet', style: TextStyle(color: Colors.white, fontSize: 20)),
+                title: Text('Wallet', style: TextStyle(color: Colors.white, fontSize: 18)),
               ),
             ),
 
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
                       'Quick Actions',
                       style: TextStyle(
                         color: Colors.black87,
-                        fontSize: 16,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -147,7 +147,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.lightbulb_outline, color: Colors.deepPurple, size: 64),
+                  Icon(Icons.lightbulb_outline, color: Color.fromARGB(255, 9, 2, 86), size: 64),
                   SizedBox(height: 16),
                   Text(
                     'Explore New Features',
@@ -167,7 +167,7 @@ class MyApp extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: Color.fromARGB(255, 9, 2, 86),
                       padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                       textStyle: TextStyle(fontSize: 16),
@@ -189,8 +189,8 @@ class MyApp extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 30,
-          backgroundColor: Colors.deepPurple.withOpacity(0.1),
-          child: Icon(icon, color: Colors.deepPurple, size: 30),
+          backgroundColor: Color.fromARGB(255, 9, 2, 86).withOpacity(0.1),
+          child: Icon(icon, color: Color.fromARGB(255, 9, 2, 86), size: 30),
         ),
         SizedBox(height: 8),
         Text(title, style: TextStyle(color: Colors.black87, fontSize: 14)),
@@ -210,7 +210,7 @@ class MyApp extends StatelessWidget {
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         child: ListTile(
           leading: CircleAvatar(
-            backgroundColor: Colors.deepPurple.withOpacity(0.1),
+            backgroundColor: Color.fromARGB(255, 9, 2, 86).withOpacity(0.1),
             child: Icon(
               isPositive ? Icons.arrow_upward : Icons.arrow_downward,
               color: isPositive ? Colors.green : Colors.red,
